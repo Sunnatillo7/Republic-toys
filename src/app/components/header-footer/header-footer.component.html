@@ -1,0 +1,61 @@
+<header>
+    <div class="top-navbar">
+        <div class="logo">
+            <img src="../assets/images/LOGO.png" alt="logo">
+        </div>
+
+
+        <nav class="nav_lists">
+            @for (item of pagesName; track $index) {
+            <div class="nav_item"> {{item}} </div>
+            }
+            <div class="nav_item">ENg</div>
+            <div class="nav_contact">
+                <button>+998970016142</button>
+            </div>
+        </nav>
+
+
+
+
+
+
+    </div>
+</header>
+
+<main class="main_bottom">
+    <div class="sidebar">
+
+        <div class="show_location__page">
+            HOMEs
+        </div>
+
+        <div class="show_order">
+            <div class="order_content">
+                <span class="info_span">
+                    <button class="info_btn" matTooltip="More info about products!" color="accent ">
+                        <mat-icon>info</mat-icon>
+                    </button>
+                </span>
+                <!-- <span> <img class="info" src="../assets/images/info circle 1.png" alt=""></span> -->
+                <p>
+                    Click the <span class="separated_text">Order Now</span> button and fill out the form so we can
+                    contact you
+                    →
+                </p>
+            </div>
+            <button class="order_btn">ORDER NOW →</button>
+
+        </div>
+
+
+    </div>
+    <div class="content">
+        <ng-content></ng-content>
+    </div>
+</main>
+
+
+<footer>
+    <app-footer></app-footer>
+</footer>

@@ -1,0 +1,30 @@
+.expension_panel{
+    width: 700px;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    padding: 20px;
+
+    .expension_panel__header{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+
+        h3{
+            font-size: 18px;
+            color: #10142D;
+
+        }
+
+    }
+
+    .expansion_panel__content{
+        overflow: hidden;
+        
+
+        p{
+            font-size: 16px;
+            color: #10142D;
+        }
+    }
+}

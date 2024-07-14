@@ -1,0 +1,38 @@
+.card {
+    width: 330px;
+    border: 1px solid #E1E1E1;
+    cursor: pointer;
+
+    .img_div {
+        border-bottom: 1px solid #E1E1E1;
+    }
+
+
+    .card_img {
+        width: 80%;
+    }
+
+
+    .card_content {
+        margin-top: 20px;
+
+        .categor_info {
+            color: #B8B8B8;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #10142D;
+            padding-left: 20px;
+        }
+    }
+
+
+
+&:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+}

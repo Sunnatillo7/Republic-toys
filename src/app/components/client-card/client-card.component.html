@@ -1,0 +1,21 @@
+<div class="card">
+    @for (item of clients; track $index) {
+    <div class="clients_card">
+        <div class="card_top">
+            <p>
+                {{item.comment}}
+            </p>
+        </div>
+        <div class="card_bottom">
+            <div class="client">
+                <span> {{item.profesion}} </span>
+                <p> {{item.name}} </p>
+            </div>
+            <div class="imgage">
+                <img [src]="item.imgSrc" alt="logo">
+            </div>
+
+        </div>
+    </div>
+    }
+</div>
