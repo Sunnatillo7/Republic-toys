@@ -6,10 +6,10 @@
     <div class="search">
         <div class="handle_search">
             <div class="serch_inp__box">
-                <input type="text" placeholder="Search among 300+ toys" id="search">
-                <label class="search_icon" for="search">
+                <input type="text" placeholder="Search among 300+ toys" id="search" #filter>
+                <button (click)="filterResults(filter.value)" class="search_icon" for="search">
                     <img src="../../../assets/images/Search 1.png" alt="">
-                </label>
+                </button>
             </div>
             <div class="select_box">
                 <span class="select_icon">
@@ -31,7 +31,7 @@
 
         <div class="toys_content">
             @if (activePage === 1) {
-            @for (item of firstPage; track $index) {
+            @for (item of filteredPage; track $index) {
 
             <app-card-toys  [toysItem]="item"></app-card-toys>
             }

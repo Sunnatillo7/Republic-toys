@@ -46,33 +46,34 @@ export class ToysComponent implements OnInit {
 
   ngOnInit(): void {
     this.sharedRouteService.page.subscribe(data => {
-      console.log(data, 'Array');
       this.checkedArr.push(data)
 
     })
 
     this.dataToys.firsPage.subscribe(data => {
       this.firstPage = data
+      this.filteredPage = this.firstPage
     })
 
-    this.dataToys.secondPage.subscribe(data =>{
+    this.dataToys.secondPage.subscribe(data => {
       this.secodPage = data
     })
   }
 
+  filterResults(value: string) {
+    if (!value) {
+    this.filteredPage = this.firstPage
+    return
+    }
+    this.filteredPage = this.firstPage.filter(item => item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase()))
+  }
+
   checkedArr = ['Boys', 'Wheelchairs and swings']
 
+  filteredPage: IToys[] = []
 
-
-  firstPage: IToys[] = [
-
-
-
-
-  ]
-  secodPage :IToys[] = [
-  
-  ]
+  firstPage: IToys[] = []
+  secodPage: IToys[] = []
 
 
 }

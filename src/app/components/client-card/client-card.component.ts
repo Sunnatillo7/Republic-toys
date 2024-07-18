@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
-import { IvyCarouselModule } from 'angular-responsive-carousel';
 import Swiper from 'swiper';
 import { SwiperPaginationComponent } from '../swiper-pagination/swiper-pagination.component';
 import { NgIf } from '@angular/common';
