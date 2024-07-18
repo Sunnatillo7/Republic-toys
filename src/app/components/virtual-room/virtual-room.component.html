@@ -1,0 +1,75 @@
+@if (place === 'home') {
+<div class="showroom">
+    <h3 class="showroom_title">360° view of the factory</h3>
+    <div class="showroom_video">
+
+        <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/7puo_kc_YRI?si=YmjVCgCV6Q1d2kYM?autoplay=1&mute=1">
+        </iframe>
+    </div>
+
+
+    <div class="about_us__section">
+        <button class="info_btns">
+            <img src="../../../assets/images/3 User 1.png" alt="">
+            <div [routerLink]="['/document-b2b']">Documents for B2B sales →</div>
+        </button>
+        <button class="info_btns">
+            <img src="../../../assets/images/Car 1.png" alt="">
+            <div>
+                Download certificate ↓
+            </div>
+        </button>
+    </div>
+</div>
+}
+@if (place ==='showroom') {
+<div class="showroom">
+    <h3 class="showroom_title">360° view of the factory</h3>
+    <div class="showroom_video">
+
+        <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/7puo_kc_YRI?si=YmjVCgCV6Q1d2kYM?autoplay=1&mute=1">
+        </iframe>
+    </div>
+
+
+    <div class="about_us__section">
+        <button class="info_btns">
+            <img src="../../../assets/images/3 User 1.png" alt="">
+            <div [routerLink]="['/document-b2b']">More about toys →</div>
+        </button>
+        <button class="info_btns">
+            <img src="../../../assets/images/Document pdf 1.png" alt="">
+            <div>
+                Download toys catalog ↓
+            </div>
+        </button>
+    </div>
+</div>
+}
+@if (place ==='contact') {
+<div class="showroom_contact">
+    <h3 class="showroom_title__contact">About Us — 2 mins video</h3>
+    <div class="showroom_video">
+
+        <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/7puo_kc_YRI?si=YmjVCgCV6Q1d2kYM">
+        </iframe>
+    </div>
+
+
+    <div class="about_us__section">
+        <button class="info_btns">
+            <img src="../../../assets/images/Document pdf 1.png" alt="">
+            <div [routerLink]="['/document-b2b']">Documents for B2B sales →</div>
+        </button>
+        <button class="info_btns">
+            <img src="../../../assets/images/Phone Call Favorite 1.png" alt="">
+            <div>
+                Contacts →
+            </div>
+        </button>
+    </div>
+</div>
+}

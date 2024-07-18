@@ -1,20 +1,20 @@
 <div class="expension_panel">
     <div class="expension_panel__header" (click)="togglePanel()">
-        <h3>How do I know which line to choose?</h3>
-        <span class="icon">{{ isOpen ? '-' : '+' }}</span>
+        <h3>{{question}}</h3>
+        <!-- <span class="icon">{{ isOpen ? '-' : '+' }}</span> -->
+        @if (isOpen) {
+            <span class="icon">
+                <img src="../../../assets/images/minus.png" alt="">
+            </span>
+        }@else {
+            <span class="icon">
+                <img src="../../../assets/images/plus.png" alt="">
+            </span>
+        }
     </div>
     <div class="expansion_panel__content" [@slideToggle]="isOpen ? 'open' : 'closed'">
-        <p>This is the content of the expansion panel.</p>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dolorem, facilis quis officia iure est
-            corrupti, non magnam eum expedita fugiat in illum sint omnis. Numquam accusantium tempora a autem inventore
-            saepe eum magni possimus dignissimos quia? Mollitia fugiat doloribus repellat veritatis dolorem odit est
-            temporibus id placeat doloremque aliquam assumenda at saepe non maxime quis aspernatur consequuntur
-            blanditiis, eligendi optio. Soluta, at sint? Eius, est ex. Amet molestiae similique excepturi fugit, nihil
-            quisquam nam, sapiente quidem eius aliquam illum eum quam earum repudiandae cupiditate est ipsa! Tempore
-            voluptates quia beatae quibusdam ex officia ea deserunt libero ab quo quis cum perferendis mollitia corporis
-            nostrum facilis nisi et repudiandae illo, hic consequuntur fugit soluta nesciunt magni. Cupiditate tempora
-            assumenda delectus?
+          {{answer}}
         </p>
     </div>
 

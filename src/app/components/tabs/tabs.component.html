@@ -1,0 +1,182 @@
+@if (forSpecialists) {
+
+<div class="tabs">
+    <div class="tab" [class.active]="selectedTab === 1" (click)="selectTab(1)">Gatherers</div>
+    <div class="tab" [class.active]="selectedTab === 2" (click)="selectTab(2)">Decorators</div>
+    <div class="tab" [class.active]="selectedTab === 3" (click)="selectTab(3)">Controllers</div>
+    <div class="tab" [class.active]="selectedTab === 4" (click)="selectTab(4)">Packers</div>
+</div>
+<div class="tab-content">
+    @if (selectedTab === 1) {
+
+    <div class="content_specialist">
+        @for (item of dataSpecialists; track $index) {
+
+        <app-specialist-card [item]="item"></app-specialist-card>
+        }
+    </div>
+    <ng-container></ng-container>
+    }
+    @if (selectedTab === 2) {
+
+    <div class="content">
+        <div class="content_img">
+            <img src="../../../assets/images/tabsimg.png" alt="">
+        </div>
+        <div class="steps_box">
+            <div class="steps">
+                <div class="steps_flex">
+                    <div class="first_step__img">
+                        <img src="../../../assets/images/Shopping bag 5.png" alt="">
+                    </div>
+                    <strong>
+                        First Step
+                    </strong>
+                </div>
+                <p>
+                    High-quality plastic raw materials (propellium, polyethylene) are purchased
+                </p>
+            </div>
+            <div class="steps">
+                <div class="steps_flex">
+                    <div class="second_step__img"><img src="../../../assets/images/User shield 1.png" alt=""></div>
+                    <strong>
+                        Second Step
+                    </strong>
+                </div>
+                <p>
+                    For the safety of children, raw materials are cleaned again using special equipment
+                </p>
+            </div>
+            <div class="steps">
+                <div class="steps_flex">
+                    <div class="second_step__img"><img src="../../../assets/images/Cube6 1.png" alt=""></div>
+                    <strong>
+                        Third Step
+                    </strong>
+                </div>
+                <p>
+                    The necessary forms for the product are placed on the machines
+
+                </p>
+            </div>
+        </div>
+    </div>
+    }
+    @if (selectedTab === 3) {
+    <h2>Tab is working!)</h2>
+
+
+    }
+    @if (selectedTab === 4) {
+    <h2>Tab is working!)</h2>
+
+
+    }
+</div>
+}@else {
+<div class="tabs">
+    <div class="tab" [class.active]="selectedTab === 1" (click)="selectTab(1)">Preparing to production</div>
+    <div class="tab" [class.active]="selectedTab === 2" (click)="selectTab(2)">Production process</div>
+    <div class="tab" [class.active]="selectedTab === 3" (click)="selectTab(3)">Toy quality control</div>
+</div>
+<div class="tab-content">
+    @if (selectedTab === 1) {
+
+    <div class="content">
+        <div class="content_img">
+            <img src="../../../assets/images/tabsimg.png" alt="">
+        </div>
+        <div class="steps_box">
+            <div class="steps">
+                <div class="steps_flex">
+                    <div class="first_step__img">
+                        <img src="../../../assets/images/Shopping bag 5.png" alt="">
+                    </div>
+                    <strong>
+                        First Step
+                    </strong>
+                </div>
+                <p>
+                    High-quality plastic raw materials (propellium, polyethylene) are purchased
+                </p>
+            </div>
+            <div class="steps">
+                <div class="steps_flex">
+                    <div class="second_step__img"><img src="../../../assets/images/User shield 1.png" alt=""></div>
+                    <strong>
+                        Second Step
+                    </strong>
+                </div>
+                <p>
+                    For the safety of children, raw materials are cleaned again using special equipment
+                </p>
+            </div>
+            <div class="steps">
+                <div class="steps_flex">
+                    <div class="second_step__img"><img src="../../../assets/images/Cube6 1.png" alt=""></div>
+                    <strong>
+                        Third Step
+                    </strong>
+                </div>
+                <p>
+                    The necessary forms for the product are placed on the machines
+
+                </p>
+            </div>
+        </div>
+    </div>
+    }
+    @if (selectedTab === 2) {
+
+    <div class="content">
+        <div class="content_img">
+            <img src="../../../assets/images/tabsimg.png" alt="">
+        </div>
+        <div class="steps_box">
+            <div class="steps">
+                <div class="steps_flex">
+                    <div class="first_step__img">
+                        <img src="../../../assets/images/Shopping bag 5.png" alt="">
+                    </div>
+                    <strong>
+                        First Step
+                    </strong>
+                </div>
+                <p>
+                    High-quality plastic raw materials (propellium, polyethylene) are purchased
+                </p>
+            </div>
+            <div class="steps">
+                <div class="steps_flex">
+                    <div class="second_step__img"><img src="../../../assets/images/User shield 1.png" alt=""></div>
+                    <strong>
+                        Second Step
+                    </strong>
+                </div>
+                <p>
+                    For the safety of children, raw materials are cleaned again using special equipment
+                </p>
+            </div>
+            <div class="steps">
+                <div class="steps_flex">
+                    <div class="second_step__img"><img src="../../../assets/images/Cube6 1.png" alt=""></div>
+                    <strong>
+                        Third Step
+                    </strong>
+                </div>
+                <p>
+                    The necessary forms for the product are placed on the machines
+
+                </p>
+            </div>
+        </div>
+    </div>
+    }
+    @if (selectedTab === 3) {
+    <h2>Tab is working!)</h2>
+
+
+    }
+</div>
+}

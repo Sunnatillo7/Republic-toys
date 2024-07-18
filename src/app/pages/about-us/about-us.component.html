@@ -1,1 +1,209 @@
-<p>about-us works!</p>
+<div class="about">
+    <div class="about_us__video">
+        <app-virtual-room [place]="'contact'"></app-virtual-room>
+        <div class="numbers_block">
+            <div class="number_box">
+                <p>The company was founded in</p>
+                <h4>
+                    2009
+                </h4>
+            </div>
+            <div class="number_box">
+                <p> Number of produced toys </p>
+                <h4>
+                    1 600 000+
+                </h4>
+            </div>
+            <div class="number_box">
+                <p>Amount of exported packages</p>
+                <h4>
+                    89 100 <span>/toys</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="production_steps">
+        <h3>
+            Toys production step by step
+        </h3>
+        <app-tabs></app-tabs>
+    </div>
+    <hr>
+    <div class="brand_section">
+        <h3>
+            The Republic of Toys® Brand Values
+        </h3>
+        <div class="brand_boxes">
+            <div class="brand_box">
+                <div class="box_top">
+                    <span>
+                        <img src="../../../assets/images/Group 82.png" alt="">
+                    </span>
+                    <h4>
+                        Imagination
+                    </h4>
+                </div>
+                <p>
+                    Free play is how children develop their imagination – the foundation for creativity.
+                </p>
+            </div>
+            <div class="brand_box">
+                <div class="box_top">
+                    <span>
+                        <img src="../../../assets/images/fun.png" alt="">
+                    </span>
+                    <h4>
+                        Imagination
+                    </h4>
+                </div>
+                <p>
+                    Free play is how children develop their imagination – the foundation for creativity.
+                </p>
+            </div>
+            <div class="brand_box">
+                <div class="box_top">
+                    <span>
+                        <img src="../../../assets/images/love.png" alt="">
+                    </span>
+                    <h4>
+                        Imagination
+                    </h4>
+                </div>
+                <p>
+                    Free play is how children develop their imagination – the foundation for creativity.
+                </p>
+            </div>
+        </div>
+        <div class="brand_boxes">
+            <div class="brand_box">
+                <div class="box_top">
+                    <span>
+                        <img src="../../../assets/images/creativ.png" alt="">
+                    </span>
+                    <h4>
+                        Imagination
+                    </h4>
+                </div>
+                <p>
+                    Free play is how children develop their imagination – the foundation for creativity.
+                </p>
+            </div>
+            <div class="brand_box">
+                <div class="box_top">
+                    <span>
+                        <img src="../../../assets/images/learning.png" alt="">
+                    </span>
+                    <h4>
+                        Imagination
+                    </h4>
+                </div>
+                <p>
+                    Free play is how children develop their imagination – the foundation for creativity.
+                </p>
+            </div>
+            <div class="brand_box">
+                <div class="box_top">
+                    <span>
+                        <img src="../../../assets/images/quality.png" alt="">
+                    </span>
+                    <h4>
+                        Imagination
+                    </h4>
+                </div>
+                <p>
+                    Free play is how children develop their imagination – the foundation for creativity.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="achievement">
+        <h3>
+            Our achievement in numbers
+        </h3>
+        <div class="achievement_boxes">
+            <div class="achievement_box">
+                <p>
+                    Toys manufacturing experience
+                </p>
+                <h4 class="box_title">
+                    13 years
+                </h4>
+            </div>
+            <div class="achievement_box">
+                <p>
+                    Number of specialists
+                </p>
+                <h4 class="box_title2">
+                    100+
+                </h4>
+            </div>
+            <div class="achievement_box">
+                <p>
+                    Product types
+                </p>
+                <h4 class="box_title2">
+                    350+
+                </h4>
+            </div>
+        </div>
+        <div class="achievement_boxes">
+            <div class="achievement_box">
+                <p>
+                    Countries exported to
+                </p>
+                <h4 class="box_title2">
+                    7+
+                </h4>
+            </div>
+            <div class="achievement_box">
+                <p>
+                    Exported packages per month
+                </p>
+                <h4 class="box_title2">
+                    7 425
+                </h4>
+            </div>
+            <div class="achievement_box">
+                <p>
+                    Produced toys per month
+                </p>
+                <h4 class="box_title2">
+                    10 250
+                </h4>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <app-gallery [wayToShowroom]="true"></app-gallery>
+    <hr>
+    <div class="clients_comments">
+        <h3>
+            Our clients are satisfied with us
+        </h3>
+        <app-client-card></app-client-card>
+    </div>
+    <hr>
+
+    <div class="specialists">
+        <h3>
+            Our qualified specialists
+        </h3>
+        <div class="specialist_tab">
+            <app-tabs [forSpecialists]="true"> </app-tabs>
+        </div>
+
+    </div>
+    <hr>
+    <div class="clients">
+        <h3>
+            Our clients
+        </h3>
+        <app-slider></app-slider>
+    </div>
+</div>

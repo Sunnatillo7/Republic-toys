@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="footer_top">
-        <div>
+        <div id="footer_logo">
 
             <div class="footer_logo">
                 <img src="../../../assets/images/LOGO.png" alt="">
@@ -10,15 +10,68 @@
                 </p>
             </div>
             <nav class="footer_nav">
-              @for (item of pageNames; track $index) {
-                <a >{{item}}</a>
-              }
+                @for (item of pageNames; track $index) {
+                <a (click)="goToPage(item)">{{item}} →</a>
+                }
             </nav>
 
 
         </div>
-        <div class="social_media"></div>
-        <div class="our_contacts"></div>
+        <div class="social_media">
+            <span>
+                <a href="#">Facebook ↗︎</a>
+            </span>
+            <span>
+                <a href="#">Instagram ↗︎</a>
+            </span>
+            <span>
+                <a href="#">Telegram ↗︎</a>
+            </span>
+            <span>
+                <a href="#">YouTube ↗︎</a>
+            </span>
+        </div>
+        <div class="our_contacts">
+            <div class="contact">
+                <span>
+                    <img src="../../../assets/images/call.png" alt="">
+                </span>
+                <p>(71) 200-70-60</p>
+            </div>
+            <div class="contact">
+                <span>
+                    <img src="../../../assets/images/calendar.png" alt="">
+                </span>
+                <p>Working days Monday — Friday / from 09:00 am to 20:00 pm.</p>
+            </div>
+            <div class="contact">
+                <span>
+                    <img src="../../../assets/images/location.png" alt="">
+                </span>
+                <p>Uzbekistan / Tashkent City / Olmazor district / Karasaray street 3.</p>
+            </div>
+
+        </div>
     </div>
-    <div class="footer_botom"></div>
+    <hr>
+    <div class="footer_botom">
+        <div class="bottom_left">
+            <p>© Copyright / The Republic of Toys /
+                All rights reserved.
+            </p>
+            <p>
+                Terms and Conditions
+            </p>
+        </div>
+        <div class="bottom_middle">
+           <p>
+            Privacy Policy
+           </p>
+        </div>
+        <div class="bottom_right">
+           <p>
+            Redesign Agency®
+           </p>
+        </div>
+    </div>
 </div>

@@ -1,1 +1,15 @@
-<p>documents-b2b works!</p>
+<div class="documents">
+    <h3 class="doc_title">
+        Documents for B2B sales
+    </h3>
+    <div class="doc_files">
+        @for (item of documents; track $index) {
+        <button class="info_btns">
+            <img src="../../../assets/images/Document pdf 1.png" alt="">
+            <div>{{item}}</div>
+        </button>
+        }
+
+
+    </div>
+</div>

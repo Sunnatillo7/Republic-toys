@@ -1,1 +1,54 @@
-<p>toys works!</p>
+<div class="toys">
+
+    <h3>
+        Toys
+    </h3>
+    <div class="search">
+        <div class="handle_search">
+            <div class="serch_inp__box">
+                <input type="text" placeholder="Search among 300+ toys" id="search">
+                <label class="search_icon" for="search">
+                    <img src="../../../assets/images/Search 1.png" alt="">
+                </label>
+            </div>
+            <div class="select_box">
+                <span class="select_icon">
+                    <img src="../../../assets/images/preferences 1.png" alt="">
+                </span>
+                <select name="cars" id="cars">
+                    <option value="popular">Popular</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </div>
+        <div class="selected_categories">
+         @for (item of checkedArr; track $index) {
+            <div class="selected">{{item}}</div>
+         }
+        </div>
+
+        <div class="toys_content">
+            @if (activePage === 1) {
+            @for (item of firstPage; track $index) {
+
+            <app-card-toys  [toysItem]="item"></app-card-toys>
+            }
+            }@else if (activePage === 2) {
+            @for (item of secodPage; track $index) {
+            <app-card-toys [toysItem]="item"></app-card-toys>
+
+            }
+            }
+            @else {
+            <h1>Tugadi</h1>
+            }
+
+        </div>
+    </div>
+    <div class="pagination">
+        <app-pagination [totalItems]="totalItems" [itemsPerPage]="itemsPerPage"
+            (pageChange)="onPageChange($event)"></app-pagination>
+    </div>
+</div>

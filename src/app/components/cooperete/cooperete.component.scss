@@ -1,0 +1,128 @@
+.cooperate_section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    .cooperete_emails {
+        width: 700px;
+
+        p {
+            font-size: 24px;
+            color: #10142D;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #10142D;
+        }
+
+        .comment_place {
+            margin-top: 20px;
+        }
+
+
+        .send_msg {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+
+            button {
+                padding: 16px 32px;
+                background-color: #DB2D37;
+                color: white;
+                font-size: 18px;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background: red;
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+        .email_lab {
+            // margin-left: 28px;
+            display: flex;
+        }
+
+        .name,
+        .email {
+            width: 270px;
+            // padding: 12px 18px;
+            height: 48px;
+            align-items: center;
+            background: transparent;
+            border: 1px solid #E1E1E1;
+            border-radius: 2px;
+            outline: none;
+
+
+
+        }
+
+        .are_inp {
+            width: 100%;
+            min-height: 166px;
+            padding-top: 16px;
+            padding-left: 20px;
+            outline: none;
+            background: transparent;
+            border: 1px solid #E1E1E1;
+            border-radius: 4px;
+        }
+
+        .social {
+            display: flex;
+            justify-content: space-between;
+
+
+        .profile_icon {
+            padding: 8px 16px;
+            border: 1px solid #E1E1E1;
+
+            img {
+                // height: 100%;
+            }
+        }
+            
+        }
+
+    }
+
+    .our_contacts {
+        width: 20%;
+        margin-right: 60px;
+
+
+        .contact {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+
+
+            p {
+                width: 270px;
+                color: #10142D;
+                font-size: 18px;
+            }
+        }
+
+        .contact+.contact {
+            margin-top: 20px;
+        }
+    }
+
+
+
+
+
+}

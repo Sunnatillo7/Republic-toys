@@ -1,0 +1,103 @@
+
+
+.content {
+    max-width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    // flex-wrap: wrap;
+
+    .content_img{
+    
+        img{
+            width: 100%;
+            height: 588px;
+        }
+    }
+
+    .steps_box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .steps {
+            width: 330px;
+            padding: 20px;
+            border: 1px solid #E1E1E1;
+            border-radius: 4px;
+
+            p{
+                font-size: 18px;
+                color: #10142D;
+            }
+
+
+            .steps_flex {
+                display: flex !important;
+                align-items: center ;
+                gap: 10px;
+                margin-bottom: 20px;
+
+                strong{
+                    font-size: 20px;
+                    color: #10142D;
+                }
+
+                p{
+                    width: 250px;
+                }
+
+                .first_step__img {
+                    background: red;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .second_step__img{
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #E1E1E1;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.content_specialist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer !important;
+    transition: color 0.3s, border-bottom 0.3s;
+    color: #B8B8B8;
+}
+
+.tab.active {
+    color: #10142D;
+    border-bottom: 2px solid red;
+}
+
+.tab-content > .content {
+    padding: 20px;
+}

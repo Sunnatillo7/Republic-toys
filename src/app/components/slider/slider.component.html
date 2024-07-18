@@ -1,0 +1,14 @@
+<div class="slider">
+    <div class="slide-track">
+        @for (item of clientsSrc; track $index) {
+
+            <div class="slide">
+                <app-our-clients-card [src]="item"  ></app-our-clients-card>
+            </div>
+        }
+    
+
+
+
+    </div>
+</div>

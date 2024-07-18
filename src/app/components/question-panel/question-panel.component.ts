@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
@@ -27,6 +27,9 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class QuestionPanelComponent {
 isOpen = false
+
+@Input() question!: string
+@Input() answer!: string
 
 
 

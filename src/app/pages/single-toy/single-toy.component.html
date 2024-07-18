@@ -1,1 +1,156 @@
-<p>single-toy works!</p>
+<div class="single">
+    <h3>
+        {{singleArr[0].name}}
+    </h3>
+    <div class="flex_img">
+        <div class="img_box1">
+            <img [src]="singleArr[0].src" alt="">
+        </div>
+        <div>
+            <div class="img_box2">
+                <img [src]="singleArr[0].src" alt="">
+            </div>
+            <div class="img_box2">
+                <img [src]="singleArr[0].src" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="data_toys">
+        <div class="about_us__section">
+            <div class="left_side">
+                <button class="info_btns">
+                    <img src="../../../assets/images/Document pdf 1.png" alt="">
+                    <div class="text_flex">
+                        <span>
+                            Articul:
+                        </span>
+                        <p>
+                            {{singleArr[0].data?.Articul}}
+                        </p>
+                    </div>
+                </button>
+                <button class="info_btns">
+                    <img src="../../../assets/images/Document pdf 1.png" alt="">
+                    <div class="text_flex">
+                        <span>
+                            EAN-13::
+                        </span>
+                        <p>
+                            {{singleArr[0].data?.EAN}}
+                        </p>
+                    </div>
+                </button>
+                <button class="info_btns">
+                    <img src="../../../assets/images/Document pdf 1.png" alt="">
+                    <div class="text_flex">
+                        <span>
+                            Assembled toy size::
+                        </span>
+                        <p>
+                            {{singleArr[0].data?.size}}
+                        </p>
+                    </div>
+                </button>
+                <button class="info_btns">
+                    <img src="../../../assets/images/Document pdf 1.png" alt="">
+                    <div class="text_flex">
+                        <span>
+                            Package size::
+                        </span>
+                        <p>
+                            {{singleArr[0].data?.paageSize}}
+                        </p>
+                    </div>
+                </button>
+            </div>
+            <div class="right_side">
+                <button class="info_btns">
+                    <img src="../../../assets/images/Document pdf 1.png" alt="">
+                    <div class="text_flex">
+                        <span>
+                            Type of packaging::
+                        </span>
+                        <p>
+                            {{singleArr[0].data?.typePacking}}
+                        </p>
+                    </div>
+                </button>
+                <button class="info_btns">
+                    <img src="../../../assets/images/Document pdf 1.png" alt="">
+                    <div class="text_flex">
+                        <span>
+                            Multipack type:
+                        </span>
+                        <p>
+                            {{singleArr[0].data?.multipackTypeL}}
+                        </p>
+                    </div>
+                </button>
+                <button class="info_btns">
+                    <img src="../../../assets/images/Document pdf 1.png" alt="">
+                    <div class="text_flex">
+                        <span>
+                            Approximate package size:
+                        </span>
+                        <p>
+                            {{singleArr[0].data?.paageSize}}
+                        </p>
+                    </div>
+                </button>
+                <div class="bottom_side">
+                    <button class="info_btns">
+                        <img src="../../../assets/images/Document pdf 1.png" alt="">
+                        <div class="text_flex">
+                            <span>
+                                Package quantity:
+                            </span>
+                            <p>
+                                {{singleArr[0].data?.PackageQuantity}}
+                            </p>
+                        </div>
+                    </button>
+                    <button class="info_btns">
+                        <img src="../../../assets/images/Document pdf 1.png" alt="">
+                        <div class="text_flex">
+                            <span>
+                                Certificate:
+                            </span>
+                            <p>
+                                Download ↓
+                            </p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="others">
+        <h3>Related toys</h3>
+        <app-swiper-pagination>
+            <swiper-slide>
+                <div class="client">
+
+                    <app-card-toys [toysItem]="relatedArr[0]"></app-card-toys>
+                    <app-card-toys [toysItem]="relatedArr[1]"></app-card-toys>
+                    <app-card-toys [toysItem]="relatedArr[2]"></app-card-toys>
+                   
+                </div>
+
+            </swiper-slide>
+            <swiper-slide>
+                <div class="client">
+                    <app-card-toys [toysItem]="relatedArr[3]"></app-card-toys>
+                    <app-card-toys [toysItem]="relatedArr[4]"></app-card-toys>
+                    <app-card-toys [toysItem]="relatedArr[5]"></app-card-toys>
+                </div>
+
+            </swiper-slide>
+  
+
+
+        </app-swiper-pagination>
+    </div>
+</div>

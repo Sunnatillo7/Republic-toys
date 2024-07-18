@@ -1,0 +1,142 @@
+.single {
+    padding: 40px 0 80px 0;
+
+    h3 {
+        font-size: 34px;
+        color: #10142D;
+        margin-left: 48px;
+        margin-bottom: 40px;
+    }
+
+    .flex_img {
+        display: flex;
+        justify-content: space-around;
+
+        .img_box1 {
+            width: 700px;
+            border: 1px solid #E1E1E1;
+            border-radius: 4px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .img_box2 {
+            width: 330px;
+            border: 1px solid #E1E1E1;
+            border-radius: 4px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .img_box2+.img_box2 {
+            margin-top: 40px;
+        }
+    }
+
+    .about_us__section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+        margin-left: 35px;
+        margin-top: 20px;
+
+        .info_btns {
+            min-width: 330px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            cursor: pointer;
+            height: 45px;
+            background: transparent;
+            border: 1px solid #E1E1E1;
+            border-radius: 2px;
+
+            .text_flex {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    margin-bottom: 0 !important;
+                    font-size: 18px;
+                    color: #10142D;
+                }
+
+                span {
+                    font-size: 18px;
+                    color: #B8B8B8;
+                }
+
+
+            }
+
+            img {
+                margin-right: 15px;
+                margin-left: 5px;
+            }
+
+
+
+            div {
+                border-left: 1px solid #E1E1E1;
+                padding: 12px 18px;
+            }
+
+        }
+
+        .right_side {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .bottom_side {
+                display: flex;
+                gap: 40px;
+            }
+        }
+
+        .left_side {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+    }
+
+    hr {
+        border: 1px solid #E1E1E1;
+    }
+
+    .others {
+        padding: 40px 0 80px 0;
+
+        h3 {
+            font-size: 24px;
+            color: #10142D;
+            margin-left: 48px;
+        }
+
+
+
+        .client {
+            width: 100%;
+            // height: 100px;
+            display: flex;
+            gap: 20px;
+
+
+            img {
+                width: 330px;
+                // width: 100%;
+            }
+        }
+    }
+}

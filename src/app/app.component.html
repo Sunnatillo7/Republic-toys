@@ -2,15 +2,17 @@
 
   <header>
     <div class="top-navbar">
-      <div class="logo">
+      <div [routerLink]="['/']" class="logo">
         <img src="../assets/images/LOGO.png" alt="logo">
       </div>
 
 
       <nav class="nav_lists">
-        @for (item of pagesName; track $index) {
-        <div class="nav_item"> {{item}} </div>
-        }
+        <div #itemForClass (click)="goToToys()" class="nav_item" [class.active]="isActive === 2"> Toys</div>
+        <div #itemForClass (click)="goToShowroom()" class="nav_item" [class.active]="isActive === 3 "> 360° Showroom
+        </div>
+        <div #itemForClass (click)="goToAboutUs()" class="nav_item" [class.active]="isActive === 4"> About Us</div>
+        <div #itemForClass (click)="goToContact()" class="nav_item" [class.active]="isActive === 5"> Contacts</div>
         <div class="nav_item">ENg</div>
         <div class="nav_contact">
           <button>+998970016142</button>
@@ -29,17 +31,53 @@
     <div class="sidebar">
 
       <div class="show_location__page">
-        HOME
+        <span class="home_icon">
+          <img src="../assets/images/home.png" alt="">
+        </span>
+        <span class="defolt_page">Home</span> > <span class="active_page">{{activePage}}</span>
       </div>
 
       <div class="show_order">
+        @if (activePage === 'toys') {
+
+        <div class="categories">
+          <h4>
+            Categories
+          </h4>
+          <form [formGroup]="formGroup"  class="categories_checkbox">
+            <div class="checkbox">
+              <input formControlName="constructors" type="checkbox" name="constructor" value="constructor"  >
+              <label for="constructor"> Constructors (44)</label><br>
+            </div>
+            <div class="checkbox">
+              <input formControlName="cars" type="checkbox" name="cars" value="Cars">
+              <label for="cars"> Cars (32)</label><br>
+            </div>
+            <div class="checkbox">
+              <input formControlName="girls" type="checkbox" name="girls" value="Girls">
+              <label for="girls"> Toys for girls (12)</label>
+            </div>
+            <div class="checkbox">
+              <input formControlName="mentalDevelopment" type="checkbox" name="jeep" value="Jeep">
+              <label for="jeep"> Toy for mental development (21)</label>
+            </div>
+            <div class="checkbox">
+              <input formControlName="sportToys"  type="checkbox" name="sport" value="Sport toys">
+              <label for="sport"> Sport toys (47)</label>
+            </div>
+            <button class="catalog_btn" type="submit" (click)="submit()" >toys catalog ↓</button>
+          </form>
+        </div>
+
+
+
+        }@else {
         <div class="order_content">
           <span class="info_span">
             <button class="info_btn" matTooltip="More info about products!" color="accent ">
               <mat-icon>info</mat-icon>
             </button>
           </span>
-          <!-- <span> <img class="info" src="../assets/images/info circle 1.png" alt=""></span> -->
           <p>
             Click the <span class="separated_text">Order Now</span> button and fill out the form so we can
             contact you
@@ -47,6 +85,7 @@
           </p>
         </div>
         <button class="order_btn">ORDER NOW →</button>
+        }
 
       </div>
 

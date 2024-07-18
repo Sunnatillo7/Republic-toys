@@ -1,8 +1,5 @@
 .card {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    // align-items: center;
     justify-content: center;
     gap: 15px;
 
@@ -12,6 +9,7 @@
         width: 330px;
         background: white;
         border: 1px solid #E1E1E1;
+        min-height: 300px;
 
 
         .card_top {
@@ -55,5 +53,69 @@
                 margin: 20px;
             }
         }
+    }
+}
+
+@mixin white-gradient {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-330px * 7))
+    }
+}
+
+
+// Styling
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    min-height: 350px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 1000px;
+    margin-top: 20px;
+
+    &::before,
+    &::after {
+        @include white-gradient;
+        content: "";
+        height: 330px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide-track {
+        animation: scroll $animationSpeed linear infinite ;
+        display: flex;
+        width: calc(330px * 14);
+        gap: 40px;
+        padding-top: 30px;
+    }
+
+    .slide {
+        min-height: 330px;
+        width: 330px;
     }
 }
