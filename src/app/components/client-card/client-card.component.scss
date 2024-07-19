@@ -3,18 +3,13 @@
     justify-content: center;
     gap: 15px;
 
-
-
     .clients_card {
         width: 330px;
         background: white;
         border: 1px solid #E1E1E1;
         min-height: 300px;
 
-
         .card_top {
-
-
             p {
                 color: #10142D;
                 font-size: 16px;
@@ -25,7 +20,6 @@
         .card_bottom {
             display: flex;
             width: 100%;
-
             justify-content: space-between;
             border-top: 1px solid #E1E1E1;
 
@@ -43,8 +37,6 @@
                     margin-top: 4px;
                 }
             }
-
-
 
             .imgage>img {
                 width: 48px;
@@ -107,7 +99,7 @@ $animationSpeed: 40s;
     }
 
     .slide-track {
-        animation: scroll $animationSpeed linear infinite ;
+        animation: scroll $animationSpeed linear infinite;
         display: flex;
         width: calc(330px * 14);
         gap: 40px;

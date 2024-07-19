@@ -18,24 +18,22 @@ export class SingleToyComponent implements OnInit {
   private route = inject(ActivatedRoute)
   dataToys = inject(DataToysService)
 
-  toyId = this.route.snapshot.params['id']
+  toyId = ''
   singleArr: IToys[] = []
   relatedArr: IToys[] = []
 
 
 
   ngOnInit(): void {
+    this.route.params.subscribe(data => {
+      this.toyId = data['id']
+      this.dataToys.firsPage.subscribe(data => {
+        this.singleArr = data.filter(item => item.id === +this.toyId)
 
-    this.dataToys.firsPage.subscribe(data => {
-      this.singleArr = data.filter(item => item.id === +this.toyId)
+        this.relatedArr = data.filter(item => item.id !== +this.toyId)
+      })
 
-      this.relatedArr = data.filter(item => item.id !== this.toyId)
     })
-
-
-
-
-
 
 
   }

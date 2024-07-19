@@ -1,4 +1,4 @@
-<div [routerLink]="['/single-toy/' + toysItem?.id]" routerLinkActive="router-link-active"  class="card">
+<div (click)="goToSinglePage(toysItem?.id)"  class="card">
     <div class="img_div">
         <img class="card_img"
             [src]="toysItem?.src"

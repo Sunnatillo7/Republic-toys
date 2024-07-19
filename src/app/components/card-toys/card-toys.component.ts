@@ -17,7 +17,7 @@ export class CardToysComponent {
 
 
   goToSinglePage(id: number | undefined) {
-    this.router.navigate([`/single-toy${id}`])
+    this.router.navigate(['single-toy', id])
   }
 
 }

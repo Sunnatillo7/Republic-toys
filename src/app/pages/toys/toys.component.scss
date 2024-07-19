@@ -16,7 +16,7 @@
         .serch_inp__box {
             display: flex;
 
-      
+
 
             input {
                 width: 600px;
@@ -56,15 +56,14 @@
                 width: 300px;
                 outline: none;
                 border: 1px solid #E1E1E1;
-                // margin-left: 40px;
                 border-radius: 4px;
             }
         }
 
     }
 
-          .selected_categories {
-            margin-left: 38px;
+    .selected_categories {
+        margin-left: 38px;
 
         .selected {
             min-width: 75px;

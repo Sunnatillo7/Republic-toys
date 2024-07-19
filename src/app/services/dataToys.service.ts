@@ -196,21 +196,7 @@ export class DataToysService {
                 PackageQuantity: 1
             }
         },
-        {
-            article: 'Articul: PP 2018-092',
-            name: 'Toyota Supra',
-            id: 12,
-            src: 'https://cdn.motor1.com/images/mgl/ojbLG4/s1/2022-toyota-supra-2.0-review.jpg',
-            data: {
-                Articul: 'РР 2012-036 B',
-                EAN: 123456,
-                size: 34,
-                paageSize: 44,
-                typePacking: 'Corrugated box',
-                multipackTypeL: 'Corrugated box',
-                PackageQuantity: 1
-            }
-        },
+
 
 
 
